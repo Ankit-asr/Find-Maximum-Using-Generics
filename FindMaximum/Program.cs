@@ -2,13 +2,12 @@
 
 namespace FindMaximum
 {
-    public class Program
+    class Program
     {
         static void Main(string[] args)
         {
-            MaximumNumber obj1 = new MaximumNumber();
-            obj1.MaximumIntegerNumber(29,40,70);
-            Console.WriteLine("Maximum Integer is "+obj1.MaximumIntegerNumber(29,40,70));
+            MaximumNumber maximum = new MaximumNumber();
+            Console.WriteLine("Maximum Float number is:" + maximum.MaximumFloatNumber(29.34, 40.34, 70.54));
         }
     }
 }

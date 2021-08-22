@@ -14,27 +14,27 @@ namespace FindMaximumTest
         [TestMethod]
         public void GivenMaxNumFirstPostion_WhenFindMaxNum_shouldReturnsMaxFirst()
         {
-            int firstMax = max.MaximumIntegerNumber(22, 1, 3);
-            Assert.AreEqual(22, firstMax);
+            double firstMax = max.MaximumFloatNumber(22.1, 1.64, 3.40);
+            Assert.AreEqual(22.1, firstMax);
 
         }
         /// <summary>
         /// Test case 1.2
-        /// <summery>
+        /// <summary>
         [TestMethod]
         public void GivenMaxNumSecondPosition_WhenFindNum_ShouldReturnsMaxSecond()
         {
-            int seconMax = max.MaximumIntegerNumber(20, 50, 10);
-            Assert.AreEqual(50, seconMax);
+            double secondMax = max.MaximumFloatNumber(20.60, 50.45, 10.47);
+            Assert.AreEqual(50.45, secondMax);
         }
         /// <summary>
         /// Test case 1.3
-        /// <summery>
+        /// <summary>
         [TestMethod]
         public void GivenMaxNumThirdPosition_WhenFindNum_ShouldReturnMaxThird()
         {
-            int thirdMax = max.MaximumIntegerNumber(1, 2, 3);
-            Assert.AreEqual(3, thirdMax);
+            double thirdMax = max.MaximumFloatNumber(1.54, 2.40, 3.36);
+            Assert.AreEqual(3.36, thirdMax);
         }
     }
 }
